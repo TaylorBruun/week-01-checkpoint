@@ -28,23 +28,23 @@
         }
       </style>
 </head>
-<!-- Make it about forests, then I can look at soothing forest pictures all weekend -->
-<body class="debug">
 
-    <header class="container-fluid">
+<!-- Make it about forests, then I can look at soothing forest pictures all weekend -->
+<body class="">
+
+    <!--NOTE optional- maybe make the bg color a picture of a cloudy forest, add a ygradient white-green? -->
+    <header class="container-fluid sticky-top">
         <div class="row">
             <div class="col banner">
                 <h2 class="display-2"><i class="mdi mdi-forest"></i>Forestry</h2>
             </div>
         </div>
     </header>
-    
-    
-    
+     
     <main class="container-fluid">
-        
+        <!-- Main Row 1 -->
         <div class="row bg-img-main">
-            <div class="col">
+            <div class="col-md-6">
                 <h5 class="text-light m-3">subtle heading</h5>
                 <div class="card-white-static m-3 p-3">
                     <h4>less subtle heading</h4>
@@ -56,13 +56,13 @@
                         <div class="separator-h"></div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md-6">
                 <div class="row mt-5 d-none d-md-flex">
                     <div class="col-1">
                         <div class="separator-v"></div>
                     </div>
                     <div class="col-11">
-                        <p class="text-light"> Here is a small section of dummy text that will later disappear on mobile - Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias rerum repudiandae aspernatur culpa corrupti libero blanditiis vero! Ducimus, aut.</p>
+                        <p class="text-light"> Here is a small section of dummy text that will disappear on mobile - Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias rerum repudiandae aspernatur culpa corrupti libero blanditiis vero! Ducimus, aut.</p>
                     </div>
                 </div>
                 
@@ -70,8 +70,27 @@
             </div>
         </div>
    
-
+        <!-- Main Row 2 -->
         <div class="row">
+        
+            <div class="banner col-md-6 order-md-last">
+                <!-- NOTE this card needs to extend beyond the col/row, but not leave space at the top (translate probably not correct for that reason) -->
+                <!-- NOTE consider:
+                        z index
+                        transform/translate/scale
+                        position relative?
+                        black magic fuckery-like, make an identical bg/list look and just use lazy translate overlapping the "clone" -->
+                
+                <div class="card-white m-3">
+                    <p class="h3 pb-2"><i class="mdi mdi-bird"></i>Let's put some text here</p>
+                    <p class="h3 pb-2"><i class="mdi mdi-tent"></i>Let's put some text here</p>
+                    <p class="h3 pb-2"><i class="mdi mdi-cloud"></i>Let's put some text here</p>
+                    <p class="h3 pb-2"><i class="mdi mdi-flower"></i>Let's put some text here</p>
+                    <p class="h3 pb-2"><i class="mdi mdi-fire-off"></i>Let's put some text here</p>
+        
+                </div>
+        
+            </div>
             <div class="banner col-md-6">
                 <h3>Here is an Article title - it is pretty long</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sint distinctio eligendi ullam!
@@ -80,37 +99,38 @@
                     accusamus asperiores. Ullam accusantium vero eveniet laboriosam, cupiditate totam atque itaque deleniti
                     tempora sint nisi ipsam nihil dolorum soluta hic autem rerum incidunt?</p>
             </div>
-            <div class="banner col-md-6">
-                <div class="card-white m-3">
-                    <p class="h3 pb-2"><i class="mdi mdi-pine-tree"></i>Let's put some text here</p>
-                    <p class="h3 pb-2"><i class="mdi mdi-cloud"></i>Let's put some text here</p>
-                    <p class="h3 pb-2"><i class="mdi mdi-bird"></i>Let's put some text here</p>
-                    <p class="h3 pb-2"><i class="mdi mdi-flower"></i>Let's put some text here</p>
-                    <p class="h3 pb-2"><i class="mdi mdi-fire-off"></i>Let's put some text here</p>
-    
-                </div>
-    
-            </div>
         </div>
     
-    
-        <div class="row">
+        <!-- Main Row 3 -->
+        <div class="row bg-soft">
             <div class="col-md-4">
                 <img class="img-fluid shadow p-2" src="./img/sidetrees.jpg" alt="">
             </div>
+
             <div class="col-md-8 pb-5">
-                <h1 class="p-2">Very large and important text should go here - again lets make it kinda long</h1>
-                <p>some lighter information text - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sapiente unde
-                    nulla perferendis consequatur rem dolores praesentium accusantium amet quaerat, molestiae iure odit in
-                    obcaecati possimus. Illum nisi excepturi, molestias architecto placeat error ducimus, commodi impedit modi
-                    nobis saepe expedita.</p>
-                <!-- NOTE need to convince this button to sit on the right -->
-                    <button class="text-end button-main btn btn-primary mr-3 px-3 py-1 shadow">More</button>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="p-2"><i class="px-2 mdi mdi-pine-tree"></i>Very large and important text should go here - again lets make it kinda long</h1>
+                        <p>some lighter information text - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sapiente
+                            unde
+                            nulla perferendis consequatur rem dolores praesentium accusantium amet quaerat, molestiae iure odit in
+                            obcaecati possimus. Illum nisi excepturi, molestias architecto placeat error ducimus, commodi impedit
+                            modi
+                            nobis saepe expedita.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-end">
+                        <button class="button-main btn mr-3 px-3 py-1 shadow">More</button>
+                    </div>
+                </div>
             </div>
         </div>
-    
-        <div class="row">
-            <div class="col-md-4">
+
+        <!-- Main Row 4 -->
+        
+        <div class="row bg-soft align-items-center">
+            <div class="col-md-4 order-md-1">
                 <div class="card-white m-2 p-2">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure architecto inventore, dicta
                         nobis quas saepe recusandae exercitationem doloremque optio culpa vel non esse dignissimos rem iusto
@@ -118,8 +138,8 @@
                 </div>
             </div>
         
-            <div class="col-md-4">
-                <div class="card-white m-2 p-2">
+            <div class="col-md-4 order-first order-md-2">
+                <div class="card-white m-2 p-4">
                     <div class="text-center">
                         <i class="fs-4 mdi mdi-message-reply-text-outline"></i>
                         <i class="fs-4 mdi mdi-message-reply-text-outline"></i>
@@ -131,7 +151,7 @@
                 </div>
             </div>
         
-            <div class="col-md-4">
+            <div class="col-md-4 order-md-3">
                 <div class="card-white m-2 p-2">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure architecto inventore, dicta
                         nobis quas saepe recusandae exercitationem doloremque optio culpa vel non esse dignissimos rem iusto
@@ -147,7 +167,7 @@
     <footer class="container-fluid">
         <div class="row">
             <div class="col banner">
-                <h1 class="p-2">Forestry</h1>
+                <h2 class="display-4">Forestry</h2>
                 <p>a little line of stuff should go here</p>
             </div>
         </div>

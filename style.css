@@ -23,12 +23,26 @@
     padding: 0 .5em;
 }
 
-.card-white-static{
+.card-white-overflow{
     background: rgb(243, 241, 238);
     box-shadow: 2px 2px 3px rgb(131, 151, 161);
     border-radius: 2%;
+    margin: 0.5em;
+    padding: 0 .5em;
+    /* height: 50vh;
+    width: 25vh; */
+    transform: scaleY(150%) translateY(15%);
+    
+}
+
+.card-white-static{
+    background: rgb(243, 241, 238);
+    box-shadow: 2px 2px 3px rgba(10, 100, 80, .2);
+    border-radius: 2%;
     margin: 0 .5em;
     padding: 0 .5em;
+    
+    
 }
 
 .card-white:hover {
@@ -66,7 +80,8 @@
 
 .button-main{
     background-color: var(--main);
-    border-color: var(--main)
+    border-color: var(--main);
+    color: white
 }
 
 .unimportant-text{
