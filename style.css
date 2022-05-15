@@ -22,17 +22,22 @@
     margin: 0 .5em;
     padding: 0 .5em;
 }
-
-.card-white-overflow{
+/* has potential as an overflow solution, would need to account for internal item distortion */
+/* .card-white-overflow{
     background: rgb(243, 241, 238);
     box-shadow: 2px 2px 3px rgb(131, 151, 161);
     border-radius: 2%;
     margin: 0.5em;
     padding: 0 .5em;
-    /* height: 50vh;
-    width: 25vh; */
     transform: scaleY(150%) translateY(15%);
-    
+} */
+
+
+@media (min-width: 768px) {
+    .card-white-overflow {
+        position: absolute;
+        min-width: 45%;
+    }
 }
 
 .card-white-static{
@@ -41,9 +46,32 @@
     border-radius: 2%;
     margin: 0 .5em;
     padding: 0 .5em;
-    
-    
+       
 }
+
+
+/* This one is for if i just create the needed space with padding at all sizes */
+/* @media (min-width: 768px) {
+    .text-shifted{
+        padding-top: 20%;
+    }
+} */
+
+ /* This one is for if I want to add content to create the space instead of padding at larger sizes */
+ @media (min-width: 768px) AND (max-width:1199px) {
+    .text-shifted{
+        padding-top: 20%;
+    }
+} 
+
+@media (min-width: 1200px){
+    .img-lg-only{
+        display: flex;
+        height: 20%;
+        width: auto !important;
+    }
+}
+
 
 .card-white:hover {
     transform: scale(1.01)
@@ -59,6 +87,16 @@
     background-position: center;
     /* Temporary height so I could see img before content was added */
     /* height: 35vh; */
+}
+
+.img-tile{
+    height: auto;
+    max-width: 40%;
+    margin: 0;
+}
+
+.img-filter{
+    filter: grayscale(80%);
 }
 
 .separator-h{
@@ -84,6 +122,8 @@
     color: white
 }
 
-.unimportant-text{
+.text-deemphasize
+
+.text-unimportant{
     font-weight: 200;
 }
