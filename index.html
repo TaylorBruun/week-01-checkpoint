@@ -30,13 +30,18 @@
 </head>
 
 <!-- Make it about forests, then I can look at soothing forest pictures all weekend -->
+
+<!-- NOTE personal checklist:
+make sure there are no horizontal scrollbars under any circumstance -->
+
+
 <body class="">
 
     <!--NOTE optional- maybe make the bg color a picture of a cloudy forest, add a ygradient white-green? -->
     <header class="container-fluid sticky-top">
         <div class="row">
             <div class="col banner">
-                <h2 class="display-2"><i class="mdi mdi-forest"></i>Forestry</h2>
+                <h2 class="display-2"><i class="mdi mdi-forest"></i>Forests</h2>
             </div>
         </div>
     </header>
@@ -79,17 +84,32 @@
                         z index
                         transform/translate/scale
                         position relative?
-                        black magic fuckery-like, make an identical bg/list look and just use lazy translate overlapping the "clone" -->
+                        black magic like make an identical bg/list look and just use lazy translate overlapping the "clone" -->
                 
-                <div class="card-white m-3">
+                <!-- Original unshifted card -->
+                <!-- <div class="card-white m-3">
                     <p class="h3 pb-2"><i class="mdi mdi-bird"></i>Let's put some text here</p>
                     <p class="h3 pb-2"><i class="mdi mdi-tent"></i>Let's put some text here</p>
                     <p class="h3 pb-2"><i class="mdi mdi-cloud"></i>Let's put some text here</p>
                     <p class="h3 pb-2"><i class="mdi mdi-flower"></i>Let's put some text here</p>
                     <p class="h3 pb-2"><i class="mdi mdi-fire-off"></i>Let's put some text here</p>
+                </div> -->
         
+<!-- Idea 1 - position absolute -->
+
+                <div class="card-white m-3 card-white-overflow">
+                    <p class="h3 pb-2"><i class="mdi mdi-bird"></i>Let's put some text here</p>
+                    <p class="h3 pb-2"><i class="mdi mdi-tent"></i>Let's put some text here</p>
+                    <p class="h3 pb-2"><i class="mdi mdi-cloud"></i>Let's put some text here</p>
+                    <p class="h3 pb-2"><i class="mdi mdi-flower"></i>Let's put some text here</p>
+                    <p class="h3 pb-2"><i class="mdi mdi-fire-off"></i>Let's put some text here</p>
+                    <p class="h3 pb-2"><i class="mdi mdi-cloud"></i>Let's put some text here</p>
+                    <p class="h3 pb-2"><i class="mdi mdi-flower"></i>Let's put some text here</p>
+                    <p class="h3 pb-2"><i class="mdi mdi-fire-off"></i>Let's put some text here</p>
+                    
                 </div>
-        
+
+
             </div>
             <div class="banner col-md-6">
                 <h3>Here is an Article title - it is pretty long</h3>
@@ -103,25 +123,48 @@
     
         <!-- Main Row 3 -->
         <div class="row bg-soft">
-            <div class="col-md-4">
-                <img class="img-fluid shadow p-2" src="./img/sidetrees.jpg" alt="">
-            </div>
-
-            <div class="col-md-8 pb-5">
+            <div class="col">
                 <div class="row">
-                    <div class="col">
-                        <h1 class="p-2"><i class="px-2 mdi mdi-pine-tree"></i>Very large and important text should go here - again lets make it kinda long</h1>
-                        <p>some lighter information text - Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sapiente
-                            unde
-                            nulla perferendis consequatur rem dolores praesentium accusantium amet quaerat, molestiae iure odit in
-                            obcaecati possimus. Illum nisi excepturi, molestias architecto placeat error ducimus, commodi impedit
-                            modi
-                            nobis saepe expedita.</p>
+                    <div class="m-0 col-0 col-xl-6 ">
+                        <div class="d-flex text-center justify-content-around">
+                        <img class="p-2 m-0 img-tile img-filter d-none d-xl-block" src="./img/squaretrees-1.jpg" alt="">                        
+                        <img class="p-2 m-0 img-tile img-filter d-none d-xl-block" src="./img/squaretrees-2.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col text-end">
-                        <button class="button-main btn mr-3 px-3 py-1 shadow">More</button>
+                    <div class="col-xl-0 col-lg-5 col-md-6 text-center my-1">
+                        <img class="img-fluid d-xl-none p-2 pt-5" src="./img/talltrees.jpg" alt="">
+        
+                    </div>
+        
+                    
+                    <div class="text-shifted col-xl-12 col-lg-7 col-md-6 pb-5">
+                        <div class="row">
+                            <div class="col">
+        
+                                <h1 class="p-2"><i class="px-2 mdi mdi-pine-tree"></i>Very large and important text should go
+                                    here - again lets make it kinda long</h1>
+                                <p>some lighter information text - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Accusamus commodi quod excepturi perferendis praesentium suscipit incidunt cupiditate! Nobis
+                                    aut dicta, recusandae blanditiis soluta a reiciendis? Pariatur ratione sapiente id
+                                    consequuntur, voluptatem nesciunt error hic rerum veniam non, placeat voluptas laboriosam
+                                    eligendi eaque quaerat ullam consectetur quod ad reprehenderit tenetur aliquid. Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Iste, sapiente
+                                    unde
+                                    nulla perferendis consequatur rem dolores praesentium accusantium amet quaerat, molestiae
+                                    iure odit in
+                                    obcaecati possimus. Illum nisi excepturi, molestias architecto placeat error ducimus,
+                                    commodi impedit
+                                    modi
+                                    nobis saepe expedita.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-end">
+                                <button class="button-main btn mr-3 px-3 py-1 shadow">More</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,6 +181,7 @@
                 </div>
             </div>
         
+            <!-- NOTE i would prefer to also emphasise with x size too -->
             <div class="col-md-4 order-first order-md-2">
                 <div class="card-white m-2 p-4">
                     <div class="text-center">
@@ -167,13 +211,13 @@
     <footer class="container-fluid">
         <div class="row">
             <div class="col banner">
-                <h2 class="display-4">Forestry</h2>
+                <h2 class="display-4">Forests</h2>
                 <p>a little line of stuff should go here</p>
             </div>
         </div>
         <div class="row">
             <div class="col bg-soft">
-                <h5 class="text-center unimportant-text fst-italic fs-6 p-2">lets put a legal disclaimer or something here</h5>
+                <h5 class="text-center text-unimportant fst-italic fs-6 p-2">lets put a legal disclaimer or something here</h5>
             </div>
         </div>
     </footer>
