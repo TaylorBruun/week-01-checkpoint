@@ -1,5 +1,5 @@
 :root{
-    --main: rgb(18, 105, 84);
+    --main: rgb(33, 167, 137);
     --secondary: rgb(255, 232, 203);
     --trim: rgb(131, 151, 161);
 
@@ -74,7 +74,7 @@
 
 
 .card-white:hover {
-    transform: scale(1.01)
+    transform: scale(1.01);
 }
 
 .card-shift{
@@ -122,7 +122,48 @@
     color: white
 }
 
-.text-deemphasize
+.button-main:hover{
+    background-color: rgb(26, 139, 106);
+    border-color: var(--main);
+    
+}
+
+.button-soft{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: rgb(14, 14, 14)
+}
+
+.button-soft:hover{
+    background-color: rgb(223, 198, 168);
+    border-color: var(--secondary);
+    color: rgb(14, 14, 14)
+}
+
+.text-de{
+    filter: opacity(60%)
+}
+
+.animated{
+    animation-duration: 4s;
+    animation-name: fadein;
+}
+
+@keyframes fadein{
+    from{
+        filter:opacity(5%);
+    }
+    to{
+        filter:opacity(100%);
+
+    }
+}
+
+.btn-top{
+    font-variant: small-caps;
+    border-radius: 50%;
+    align-self: flex-center;
+}
 
 .text-unimportant{
     font-weight: 200;

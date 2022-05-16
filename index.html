@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Checkpoint!</title>
+    <title>Forests</title>
 
     <style>
         body.debug .container,
@@ -31,13 +31,12 @@
 
 <!-- Make it about forests, then I can look at soothing forest pictures all weekend -->
 
-<!-- NOTE personal checklist:
-make sure there are no horizontal scrollbars under any circumstance -->
+
 
 
 <body class="">
 
-    <!--NOTE optional- maybe make the bg color a picture of a cloudy forest, add a ygradient white-green? -->
+   <div id="top"></div>
     <header class="container-fluid sticky-top">
         <div class="row">
             <div class="col banner">
@@ -49,25 +48,27 @@ make sure there are no horizontal scrollbars under any circumstance -->
     <main class="container-fluid">
         <!-- Main Row 1 -->
         <div class="row bg-img-main">
-            <div class="col-md-6">
-                <h5 class="text-light m-3">subtle heading</h5>
+             <div class="my-3 col-md-6">
+                <h5 class="text-light m-3">Forest coverage worldwide</h5>
                 <div class="card-white-static m-3 p-3">
-                    <h4>less subtle heading</h4>
-                    <p class="border">maybe some text boxes</p>
-                    <p class="border">maybe some more text boxes</p>
-                    <p class=""> <span class="border">maybe short</span><span class="border mx-5">and adjacent</span></p>
-                    <p class="border">maybe one big one - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore cum
-                        excepturi quidem tenetur voluptatibus vel placeat ex? In, neque accusamus?</p>
-                        <div class="separator-h"></div>
+                    <h4>Statistics</h4>
+                    <p class="px-1 border">Forests cover 31 percent of global land area</p>
+                    <p class="px-1 border">Approximately half of this forest area is relatively intact</p>
+                    <p class="px-1 border">This amounts to around 5,000 square meters of forest per person, but it is not evenly distributed
+                        around the globe</p>
+                    <p class="px-1 border">More than half of the world's forests are located in just five countries - , Brazil, Russia,
+                        China, the United States, and Canada</p>
+                    <p class="text-de text-break">source: fao.org/state-of-forests/en/</p>
+                    <div class="separator-h"></div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="my-5 col-md-6">
                 <div class="row mt-5 d-none d-md-flex">
                     <div class="col-1">
-                        <div class="separator-v"></div>
+                        <div class="separator-v animated"></div>
                     </div>
                     <div class="col-11">
-                        <p class="text-light"> Here is a small section of dummy text that will disappear on mobile - Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias rerum repudiandae aspernatur culpa corrupti libero blanditiis vero! Ducimus, aut.</p>
+                        <p class="h6 text-light animated"> This forest is in the Almaty region of Kazakhstan. In 2021, Almaty lost 718ha of tree cover. <br> <span class="text-de text-break">source: globalforestwatch.org/</span></p>
                     </div>
                 </div>
                 
@@ -79,13 +80,7 @@ make sure there are no horizontal scrollbars under any circumstance -->
         <div class="row">
         
             <div class="banner col-md-6 order-md-last">
-                <!-- NOTE this card needs to extend beyond the col/row, but not leave space at the top (translate probably not correct for that reason) -->
-                <!-- NOTE consider:
-                        z index
-                        transform/translate/scale
-                        position relative?
-                        black magic like make an identical bg/list look and just use lazy translate overlapping the "clone" -->
-                
+                                
                 <!-- Original unshifted card -->
                 <!-- <div class="card-white m-3">
                     <p class="h3 pb-2"><i class="mdi mdi-bird"></i>Let's put some text here</p>
@@ -95,29 +90,32 @@ make sure there are no horizontal scrollbars under any circumstance -->
                     <p class="h3 pb-2"><i class="mdi mdi-fire-off"></i>Let's put some text here</p>
                 </div> -->
         
-<!-- Idea 1 - position absolute -->
-
+                <!-- position absolute card -->
                 <div class="card-white m-3 card-white-overflow">
-                    <p class="h3 pb-2"><i class="mdi mdi-bird"></i>Let's put some text here</p>
-                    <p class="h3 pb-2"><i class="mdi mdi-tent"></i>Let's put some text here</p>
-                    <p class="h3 pb-2"><i class="mdi mdi-cloud"></i>Let's put some text here</p>
-                    <p class="h3 pb-2"><i class="mdi mdi-flower"></i>Let's put some text here</p>
-                    <p class="h3 pb-2"><i class="mdi mdi-fire-off"></i>Let's put some text here</p>
-                    <p class="h3 pb-2"><i class="mdi mdi-cloud"></i>Let's put some text here</p>
-                    <p class="h3 pb-2"><i class="mdi mdi-flower"></i>Let's put some text here</p>
-                    <p class="h3 pb-2"><i class="mdi mdi-fire-off"></i>Let's put some text here</p>
-                    
+                    <p class="h5 pb-xl-3 pb-lg-2 pt-2"><i class="mdi mdi-bird"></i>Forests are a notable source of biodiversity</p>
+                    <p class="h5 pb-xl-3 pb-lg-2 "><i class="mdi mdi-cloud"></i>Forests regulate the surrounding climate and reduce the impact of climate change</p>
+                    <p class="h5 pb-xl-3 pb-lg-2 "><i class="mdi mdi-flower"></i>Around sixty percent of plant species are found in tropical forests</p>
+                    <p class="h5 pb-xl-3 pb-lg-2 "><i class="mdi mdi-water"></i>Forests provide a significant source of water</p>
+                    <p class="h5 pb-xl-3 pb-lg-2 "><i class="mdi mdi-tent"></i>Forests also provide recreation</p>
+                    <p class="h5 pb-xl-3 pb-lg-2 "><i class="mdi mdi-axe"></i>Land clearing is the most significant threat to forests</p>
+                    <p class="h5 pb-xl-3 pb-lg-2 "><i class="mdi mdi-corn"></i>A significant driver of deforestation is conversion for agricultural use</p>
+                    <p class="h5 pb-xl-3 pb-lg-2 "><i class="mdi mdi-tree"></i>Over 20,000 trees are currently on the IUCN Red List of Threatened Species</p>
+                    <p class="p-1 text-de text-break">source: fao.org/state-of-forests/en/</p>
                 </div>
-
-
             </div>
-            <div class="banner col-md-6">
-                <h3>Here is an Article title - it is pretty long</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sint distinctio eligendi ullam!
-                    Accusantium perferendis quis quisquam ducimus nulla, enim voluptatem nemo in incidunt laboriosam illum
-                    sint
-                    accusamus asperiores. Ullam accusantium vero eveniet laboriosam, cupiditate totam atque itaque deleniti
-                    tempora sint nisi ipsam nihil dolorum soluta hic autem rerum incidunt?</p>
+            <div class="pt-4 pb-2 banner col-md-6">
+                <h3 class="display-6">Deforestation and forest degradation</h3>
+                <p>
+                    Deforestation and forest degradation continue to take place at alarming rates, which contributes significantly to the ongoing loss of biodiversity.
+                    
+                    Since 1990, it is estimated that 420 million hectares of forest have been lost through conversion to other land uses, although the rate of deforestation has decreased over the past three decades.
+            
+                    Between 2015 and 2020, the rate of deforestation was estimated at 10 million hectares per year, down from 16
+                    million hectares per year in the 1990s. The area of primary forest worldwide has decreased by over 80 million
+                    hectares since 1990.
+
+                    <p class="p-1 text-de text-break">source: fao.org/state-of-forests/en/</p>
+                </p>
             </div>
         </div>
     
@@ -127,14 +125,14 @@ make sure there are no horizontal scrollbars under any circumstance -->
                 <div class="row">
                     <div class="m-0 col-0 col-xl-6 ">
                         <div class="d-flex text-center justify-content-around">
-                        <img class="p-2 m-0 img-tile img-filter d-none d-xl-block" src="./img/squaretrees-1.jpg" alt="">                        
-                        <img class="p-2 m-0 img-tile img-filter d-none d-xl-block" src="./img/squaretrees-2.jpg" alt="">
+                        <img class="p-2 m-0 img-tile img-filter d-none d-xl-block" src="./img/squaretrees-1.jpg" alt="Snowy pine forest">                        
+                        <img class="p-2 m-0 img-tile img-filter d-none d-xl-block" src="./img/squaretrees-2.jpg" alt="River running through pine forest">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xl-0 col-lg-5 col-md-6 text-center my-1">
-                        <img class="img-fluid d-xl-none p-2 pt-5" src="./img/talltrees.jpg" alt="">
+                        <img class="img-fluid d-xl-none p-2 pt-5" src="./img/talltrees.jpg" alt="Pine forest with low hanging clouds">
         
                     </div>
         
@@ -142,27 +140,28 @@ make sure there are no horizontal scrollbars under any circumstance -->
                     <div class="text-shifted col-xl-12 col-lg-7 col-md-6 pb-5">
                         <div class="row">
                             <div class="col">
-        
-                                <h1 class="p-2"><i class="px-2 mdi mdi-pine-tree"></i>Very large and important text should go
-                                    here - again lets make it kinda long</h1>
-                                <p>some lighter information text - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Accusamus commodi quod excepturi perferendis praesentium suscipit incidunt cupiditate! Nobis
-                                    aut dicta, recusandae blanditiis soluta a reiciendis? Pariatur ratione sapiente id
-                                    consequuntur, voluptatem nesciunt error hic rerum veniam non, placeat voluptas laboriosam
-                                    eligendi eaque quaerat ullam consectetur quod ad reprehenderit tenetur aliquid. Lorem ipsum
-                                    dolor sit amet consectetur adipisicing elit. Iste, sapiente
-                                    unde
-                                    nulla perferendis consequatur rem dolores praesentium accusantium amet quaerat, molestiae
-                                    iure odit in
-                                    obcaecati possimus. Illum nisi excepturi, molestias architecto placeat error ducimus,
-                                    commodi impedit
-                                    modi
-                                    nobis saepe expedita.</p>
+                            
+                                <h1 class="display-5 p-2"><i class="px-2 mdi mdi-earth"></i>The World Heritage of Forests</h1>
+                                <p>
+                                    Over 200 UNESCO World Heritage sites harbor unique forest ecosystems. Ranging in size from 18 hectares (Vallée
+                                    de Mai, Seychelles), to more than 5 million hectares (Central Amazon Conservation Complex, Brazil), World
+                                    Heritage forest sites now have a total surface area of over 69 million hectares (roughly twice the size of
+                                    Germany).
+                                    Forests are some of the most biodiversity-rich habitats on Earth. They play a crucial role in climate regulation
+                                    by absorbing carbon dioxide (CO2) and are considered as one of the most cost-effective forms of climate action.
+                            
+                                    They are also vitally important for human well-being and survival. It is estimated that around 1.6 billion
+                                    people - including more than 2,000 indigenous cultures - depend on forests for their livelihoods, medicine,
+                                    fuel, food and shelter.
+                                
+                            
+                                </p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col text-end">
-                                <button class="button-main btn mr-3 px-3 py-1 shadow">More</button>
+                            <div class="col d-flex justify-content-end text-end">
+                                <p class="p-1 text-de text-break">source: whc.unesco.org/en/forests/</p>
+                                <button class="button-main btn rounded-pill mx-3 px-2 py-0 shadow"> <a class="text-white text-decoration-none" href="https://whc.unesco.org/en/forests/">More</a></button>
                             </div>
                         </div>
                     </div>
@@ -175,34 +174,34 @@ make sure there are no horizontal scrollbars under any circumstance -->
         <div class="row bg-soft align-items-center">
             <div class="col-md-4 order-md-1">
                 <div class="card-white m-2 p-2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure architecto inventore, dicta
-                        nobis quas saepe recusandae exercitationem doloremque optio culpa vel non esse dignissimos rem iusto
-                        magnam itaque ipsam.</p>
+                    <p class="m-1">13
+                        billion tonnes of carbon are stored in trees and soil (more carbon than Kuwait's proven oil reserves)</p>
                 </div>
             </div>
         
-            <!-- NOTE i would prefer to also emphasise with x size too -->
+            
             <div class="col-md-4 order-first order-md-2">
                 <div class="card-white m-2 p-4">
                     <div class="text-center">
-                        <i class="fs-4 mdi mdi-message-reply-text-outline"></i>
-                        <i class="fs-4 mdi mdi-message-reply-text-outline"></i>
-                        <i class="fs-4 mdi mdi-message-reply-text-outline"></i>
+                        <i class="fs-4 mdi mdi-pine-tree"></i>
+                        <i class="fs-4 mdi mdi-pine-tree"></i>
+                        <i class="fs-4 mdi mdi-pine-tree"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure architecto inventore, dicta
-                        nobis quas saepe recusandae exercitationem doloremque optio culpa vel non esse dignissimos rem iusto
-                        magnam itaque ipsam.</p>
+                    <p class="m-1">190
+                        million tonnes of carbon dioxide absorbed (net)
+                        from the atmosphere each year
+                        (equivalent to approximately half of the United Kingdom's annual CO2 emissions from fossil fuels)</p>
                 </div>
             </div>
         
             <div class="col-md-4 order-md-3">
                 <div class="card-white m-2 p-2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure architecto inventore, dicta
-                        nobis quas saepe recusandae exercitationem doloremque optio culpa vel non esse dignissimos rem iusto
-                        magnam itaque ipsam.</p>
+                    <p class="m-1">10
+                        World Heritage forests
+                        were net carbon sources from 2001 to 2020 due to natural and anthropogenic disturbances, including climate change</p>
                 </div>
             </div>
-        
+            <p class="p-2 text-de order-last text-break">source: whc.unesco.org/en/forests/</p>
         </div>
     </main>
 
@@ -210,14 +209,16 @@ make sure there are no horizontal scrollbars under any circumstance -->
 
     <footer class="container-fluid">
         <div class="row">
-            <div class="col banner">
+            <div class="col banner d-flex justify-content-between">
                 <h2 class="display-4">Forests</h2>
-                <p>a little line of stuff should go here</p>
+                <a class="" href="#top"><button class="m-2 text-decoration-none btn shadow button-soft btn-top"><i class="m-0 p-0 mdi mdi-arrow-up"></i><p class="m-0 p-0">Top</p></button></a>
+                <!-- Consider whether a subtitle would improve the look -->
+                <!-- <p>potential subtitle?</p> -->
             </div>
         </div>
         <div class="row">
             <div class="col bg-soft">
-                <h5 class="text-center text-unimportant fst-italic fs-6 p-2">lets put a legal disclaimer or something here</h5>
+                <h5 class="text-break text-center text-unimportant fst-italic fs-6 p-2">Questions or comments about this site? Contact me - Taylorbruun@gmail.com | Slack:Taylor Bruun | github.com/TaylorBruun</h5>
             </div>
         </div>
     </footer>
