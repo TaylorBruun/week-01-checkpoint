@@ -5,6 +5,10 @@
 
 }
 
+.banner-font {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .banner{
     background-color: var(--main);
